@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:background="#292929">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="EtoE"
+            android:textSize="32dp"
+            android:textStyle="bold"
+            android:layout_margin="30dp"
+            android:textColor="#FFFFFF"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TimePicker
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/time_picker"
+                android:layout_margin="20dp"
+                android:timePickerMode="spinner"
+                android:numbersTextColor="#FFFFFF"
+                android:theme="@style/CustomTimePicker"/>
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/ori"
+                android:hint="ori"
+                android:layout_marginHorizontal="40dp"
+                android:layout_marginTop="24dp"
+                android:textSize="18dp"
+                android:background="@drawable/path_input"
+                android:padding="6dp"/>
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/dest"
+                android:hint="dest"
+                android:layout_marginHorizontal="40dp"
+                android:layout_marginVertical="12dp"
+                android:textSize="18dp"
+                android:background="@drawable/path_input"
+                android:padding="6dp"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="right">
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/button_start"
+                    android:text="Getting started"
+                    android:layout_marginRight="30dp"
+                    android:layout_marginTop="8dp"
+                    android:textSize="18dp"
+                    android:background="@android:color/transparent"/>
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

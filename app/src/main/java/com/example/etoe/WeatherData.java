@@ -25,7 +25,7 @@ public class WeatherData {
         // end point 주소값
         String apiUrl = "http://apis.data.go.kr/1360000/VilageFcstInfoService_2.0/getVilageFcst";
         // 일반 인증키
-        String serviceKey = "tfH19wo%2FfvbHGB%2FNqenbhBm0lwjzUCS852KxuLs3cNj1dOFfpyCkoCYXrLj3yfNzHFgPtklPQHA9aBGS%2BPY8ew%3D%3D";
+        String serviceKey = "your key";
 
         StringBuilder urlBuilder = new StringBuilder(apiUrl);
         urlBuilder.append("?" + URLEncoder.encode("ServiceKey", "UTF-8") + "=" + serviceKey); // 서비스 키
